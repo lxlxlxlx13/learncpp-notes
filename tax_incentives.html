@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Crappy Clunky Notes</title>
+    <style>
+        body {
+            background-color: #f3e5f5;
+            color: black;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ce93d8;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #e1bee7;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            padding-bottom: 40px;
+            margin-bottom: 60px;
+            max-width: 800px;
+            margin: auto
+        }
+        aside {
+        position: absolute;
+        right: 0;
+        top: 150px; /* Adjusted to be below the navigation bar */
+        width: 200px;
+        padding: 10px;
+        background-color: #e1bee7;
+        }
+
+        
+        #scrollToTopBtn {
+        background-color: #ce93d8;
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        font-size: 18px;
+        border-radius: 50%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #scrollToTopBtn:hover {
+        background-color: #ab47bc;
+        transform: scale(1.1);
+        }
+
+        @media (max-width: 800px) {
+            aside {
+                position: static;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: white">
+            My Crappy Clunky Notes</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="UnrelatedDistractions.html">Unrelated Distractions</a>
+    </nav>
+    
+    <main>
+        <h2>Tax Incentives</h2>
+        Incentives administered by EDB:
+        <ul style="list-style-type: none; padding: 0;">
+            <li><a href="#pioneer" style="color: #4a148c;">Pioneer</a></li>
+            <li><a href="#dei" style="color: #4a148c;">Development and Expansion Incentive</a></li>
+            <li><a href="#ia" style="color:#4a148c;">Investment Allowance</a></li>
+            <li><a href="#approved foreign loan and royalties" style="color:#4a148c;">Approved Foreign Loan and Royalties</a></li>
+        </ul>
+        Incentives administered by ESG:
+        <ul style="list-style-type: none; padding: 0;">
+            <li><a href="#gtp" style="color:#4a148c;">Global Trader Programme</a></li>
+        </ul>
+        Finally, there is the <a href="ric" style="color:#4a148c;">Refundable Investment Credit</a>.
+        <br>
+        <br>
+        Before going through these, remember that the claim of CA is mandatory except for:
+        <ul>
+            <li>Investment >$150mil</li>
+            <li>Investment that will enhance the economic or technological development of SG</li>
+            <li>>50% of paid-up capital held by citizens or PR</li>
+        </ul>
+
+        <h3 id="pioneer">Pioneer Incentive</h3>
+        <p>
+            It grants tax exemption for up to 15 years. The incentive is granted to companies that pioneer a new industry or product.
+            Can non-pioneer business be carried on the pioneer business?
+            <br>
+            <br>
+            Separate books must be kept for the pioneer and non-pioneer businesses. Non-pioneer loss must be setoff against pionoeer profits.
+            <br>
+            <br>
+            If the adjusted profits of the non-pioneer service <5%, the non-pioneer business will be <strong>deemed</strong> to have adjusted profits of 5%. The pioneer profits will be reduced acordingly.
+            <br>
+            <br>
+            If the non-pioneer business is incidental and negligible, the non-pioneer business may be amalgamated as pioneer activity.
+            <br>Negligible = <5% of the turnover
+            <br>There are post-pioneer incentives to gradually phase the pioneer and export companies to fully tax paying.
+        </p>
+        <h3 id="dei">Development and Expansion Incentive (DEI)</h3>
+        <p>
+            This incentive grants companies with a <strong>concessionary tax rate of not less than 5%</strong>.
+            <br>
+            It is applicable to "expansion income" and has a period of up to 20 years.
+            <br>
+            <br>
+            To compute the expansion income, deduct CA from adjusted profits to get the qualifying income, then deduct the "base" profit to get the "expansion income". The "base" profit is the average annual profit of the last 3 years before the incentive period.
+            <strong>Don't forget to tax the "base" profit</strong>. Normal procedure: Partial tax exemption, then a 17% on the remaining profits! 
+        </p>
+        <h3 id="ia">Investment Allowance (IA)</h3>
+        <p>
+            IA is based on the percentage of "Qualifying Investment". 
+            It is given in addition to CA! The maximum IA is 100%. 
+            This incentive is for investment in "Approved Fixed Capital Expenditure":
+            <ul>
+                <li>Factory building specifically for approvied projects</li>
+                <li>Knowhow or patent rights</li>
+                <li>Productive equipment</li>
+            </ul>
+            The "Investment Period" is the period within which "qualifying investments" will qualify for IA.
+            The maximum period is 5 years or 8 years if under hire purchase.
+            <br>
+            <strong>IA is setoff against CI</strong> to get Net CI. Excess IA can be carried forward indefinitely. However, there are some restrictions:
+            <ul>
+                <li>The qualifying plant <strong>cannot be disposed within 2 years of the end of the "investment period" unless approval is granted</strong>.</li>
+            </ul>
+        </p>
+        <h3 id="approved foreign loan and royalties">Approved Foreign Loan and Royalties</h3>
+        <p>
+            These incentives provide exemption or reduction of withholding tax.
+            First, there is the <strong>Finance & Treasury Centre Incentive (FTC)</strong>. 
+            <br>
+            <br>
+            It provides an <strong>8% tax rate on "Qualifying Income"</strong> and <strong>a withholding tax exemption on interest and swap payments to network companies</strong>. 
+            These network companies are in:
+            <ul>
+            <li>Overall business planning</li>
+            <li>Investment of research and analysis</li>
+            <li>Management of:</li>
+            <ul>
+                    <li>liquidity position of network companies</li>
+                    <li>interest rates</li>
+                    <li>foreign exchange</li>
+                    <li>credit risks</li>
+                </ul>
+            </ul>
+            Next there is the <strong>IP Development Incentive (IDI)</strong>. It provides a <strong>5% or 10%</strong> tax rate on "Qualifying Income". 
+            The "Qualifying Income" refers to:
+            <ul>
+                <li>Royalties</li>
+                <li>Income from commerical exploitation of IPR</li>
+            </ul>
+            The <strong>tax rate increases by 0.5% every 5 years</strong>. This increase <strong>occurs from the 3rd 5-year period to the 8th 5-year period</strong>. The initial incentive period is up to 10 yeras but can be extended by 10 years each time.
+            <br>
+            The window period for the award of this incentive is 1 July 2018-31 December 2023.
+        </p>
+        <h3 id="gtp">Global Trader Programme (GTP)</h3>
+        <p>
+            This incentive is a merger of the Approved Oil Trader (AOT) and Approved International Trader (AIT) incentives.
+            GTP provides a <strong>concessionary tax rate of 5%-10%</strong> on "Qualifying Income". 
+            GTP is applicable to International Trading Companies using Singapore for regional/global operations with:
+            <ul>
+                <li>Minimum annual turnover of US$100mil</li>
+                <li>Minimum annual total business spending of S$3mil</li>
+            </ul>
+            The International Trading Companies must be trading in:
+            <ul>
+                <li>Commodities and products</li>
+                <li>Agricultural commodities and products</li>
+                <li>Petroleum and petroleum products</li>
+                <li>Bulk chemicals, fertilisers, consumer and industrial products</li>
+                <li>Electronic and electrical products</li>
+            </ul>
+        </p>
+        There is an additional concessionary tax rate for <strong>FTC and Aircraft Leasing Scheme (ALS) of 10%</strong>, that is effective from 17th Feburary 2024.
+        There is also an additional concessionary tax rate of <strong>15%</strong> for <strong>DEI, IDI and GTP</strong> that is effective from 17th February 2024.
+        <h3 id="ric">Refundable Investment Credit (RIC)</h3>
+        <p>
+            Companies can receive a <strong>maximum of 50%</strong>support on each "Qualifying Expenditure". <strong>RIC is setoff against coporate tax!!!</strong>. The excess credits are refundable within 4 years of satisfying all conditions.
+            The "Qualifying Activities" refer to:
+            <ul>
+                <li>New manufacturing plant</li>
+                <li>Production of low-carbon energy</li>
+                <li>Expansion of activities that are digital, professional or related to the supply chain</li>
+                <li>HQ activities and centres of excellence</li>
+                <li>Commodities trading</li>
+                <li>R&D and innovation activities</li>
+                <li>Implementing solutions with decarbonisation objectives</li>
+            </ul>
+            The "Qualifying Expenditure" refers to:
+            <ul>
+                <li>Building & structures, plant, machinery and software</li>
+                <li>Manpower</li>
+                <li>Staff training</li>
+                <li>Professional fees</li>
+                <li>Intangible assets</li>
+                <li>Outsourcing costs</li>
+                <li>Materials and consumables</li>
+            </ul>
+        </p>
+
+    </main>    
+    
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <aside>
+        <h3>Other chapters</h3>
+        <ul style="list-style-type: none; padding: 0;">
+            <li><a href="atax_exam.html" style="color: #4a148c;">GST</a></li>  
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+            <li><a href="#" style="color: #4a148c;">?</a></li>
+        </ul>
+    </aside>
+</body>
+</html>
+
